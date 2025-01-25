@@ -1,4 +1,6 @@
 # UI-Test
+![Build-Status](https://github.com/mflingelli/UI-Tests/actions/workflows/maven.yml/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Dieses Projekt zeigt Möglichkeiten des Testens von Web-Anwendungen mit Selenium.
 
