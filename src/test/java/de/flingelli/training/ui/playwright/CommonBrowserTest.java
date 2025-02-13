@@ -17,6 +17,12 @@ public class CommonBrowserTest {
         this.browser = browser;
     }
 
+    public void tearDown() {
+        if (browser != null) {
+            browser.close();
+        }
+    }
+
     public void openWebsite() {
             Page page = browser.newPage();
             page.navigate("http://playwright.dev");
