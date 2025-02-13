@@ -3,6 +3,7 @@ package de.flingelli.training.ui.playwright;
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
+import org.apache.commons.lang3.SystemUtils;
 import org.testng.Assert;
 
 public class CommonBrowserTest {
@@ -39,6 +40,6 @@ public class CommonBrowserTest {
         page.locator("input[name=\"search\"]").click();
         page.locator("input[name=\"search\"]").fill("playwright");
         page.locator("input[name=\"search\"]").press("Enter");
-        Assert.assertTrue(page.url().startsWith("https://de.wikipedia.org"));
+        Assert.assertTrue(page.url().startsWith("https://en.wikipedia.org/wiki/Playwright"));
     }
 }
