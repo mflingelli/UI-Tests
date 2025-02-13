@@ -20,5 +20,7 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
           cache: maven
+      - name: Install missing Webkit dependencies
+        run:  mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install-deps"
       - name: Run the headless tests
         run: mvn clean test
