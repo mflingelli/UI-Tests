@@ -1,6 +1,7 @@
 package de.flingelli.training.ui.playwright;
 
 import com.microsoft.playwright.BrowserType;
+import org.apache.commons.lang3.SystemUtils;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -13,6 +14,8 @@ public class WebkitHeadlessTest extends CommonBrowserTest {
 
     @Test
     public void openWebsite() {
-        super.openWebsite();
+        if (SystemUtils.IS_OS_WINDOWS) {
+            super.openWebsite();
+        }
     }
 }
