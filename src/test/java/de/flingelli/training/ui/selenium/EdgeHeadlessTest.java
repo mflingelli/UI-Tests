@@ -1,4 +1,4 @@
-package de.flingelli.training.ui;
+package de.flingelli.training.ui.selenium;
 
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;

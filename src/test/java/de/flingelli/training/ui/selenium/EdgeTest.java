@@ -1,14 +1,14 @@
-package de.flingelli.training.ui;
+package de.flingelli.training.ui.selenium;
 
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ChromeTest extends CommonBrowserTest {
+public class EdgeTest extends CommonBrowserTest {
     @BeforeMethod
     public void setup() {
-        setDriver(new ChromeDriver());
+        setDriver(new EdgeDriver());
     }
 
     @Test

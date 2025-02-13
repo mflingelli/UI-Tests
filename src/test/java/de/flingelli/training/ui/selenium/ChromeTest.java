@@ -1,14 +1,14 @@
-package de.flingelli.training.ui;
+package de.flingelli.training.ui.selenium;
 
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class FirefoxTest extends CommonBrowserTest {
+public class ChromeTest extends CommonBrowserTest {
     @BeforeMethod
     public void setup() {
-        setDriver(new FirefoxDriver());
+        setDriver(new ChromeDriver());
     }
 
     @Test

@@ -1,4 +1,4 @@
-package de.flingelli.training.ui;
+package de.flingelli.training.ui.selenium;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;

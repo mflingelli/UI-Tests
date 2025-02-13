@@ -1,17 +1,14 @@
-package de.flingelli.training.ui;
+package de.flingelli.training.ui.selenium;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class FirefoxHeadlessTest extends CommonBrowserTest {
+public class FirefoxTest extends CommonBrowserTest {
     @BeforeMethod
     public void setup() {
-        FirefoxOptions options = new FirefoxOptions();
-        options.addArguments("--headless");
-        setDriver(new FirefoxDriver(options));
+        setDriver(new FirefoxDriver());
     }
 
     @Test
