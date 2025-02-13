@@ -13,6 +13,10 @@ public class CommonBrowserTest {
         return playwright;
     }
 
+    public Browser getBrowser() {
+        return browser;
+    }
+
     public void setBrowser(Browser browser) {
         this.browser = browser;
     }
@@ -27,5 +31,15 @@ public class CommonBrowserTest {
             Page page = browser.newPage();
             page.navigate("http://playwright.dev");
             Assert.assertTrue(page.title().contains("Playwright"));
+    }
+
+    public void shouldSearchWiki() {
+        Page page = getBrowser().newPage();
+        page.navigate("https://www.wikipedia.org/");
+        page.locator("input[name=\"search\"]").click();
+        page.locator("input[name=\"search\"]").fill("playwright");
+        page.locator("input[name=\"search\"]").press("Enter");
+        Assert.assertEquals("https://de.wikipedia.org/w/index.php?go=Go&search=playwright&title=Spezial:Suche&ns0=1",
+                page.url());
     }
 }

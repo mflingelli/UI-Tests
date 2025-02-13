@@ -24,4 +24,11 @@ public class WebkitHeadlessTest extends CommonBrowserTest {
             super.openWebsite();
         }
     }
+
+    @Test
+    public void shouldSearchWiki() {
+        if (SystemUtils.IS_OS_WINDOWS) {
+            super.shouldSearchWiki();
+        }
+    }
 }

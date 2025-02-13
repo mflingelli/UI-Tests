@@ -21,4 +21,9 @@ public class FirefoxTest extends CommonBrowserTest {
     public void openWebsite() {
         super.openWebsite();
     }
+
+    @Test
+    public void shouldSearchWiki() {
+        super.shouldSearchWiki();
+    }
 }

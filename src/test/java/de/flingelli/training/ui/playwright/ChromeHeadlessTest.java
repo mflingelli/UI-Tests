@@ -21,4 +21,9 @@ public class ChromeHeadlessTest extends CommonBrowserTest {
     public void openWebsite() {
         super.openWebsite();
     }
+
+    @Test
+    public void shouldSearchWiki() {
+        super.shouldSearchWiki();
+    }
 }

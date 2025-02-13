@@ -24,4 +24,9 @@ public class WebkitTest extends CommonBrowserTest {
             super.openWebsite();
         }
     }
+
+    @Test
+    public void shouldSearchWiki() {
+        super.shouldSearchWiki();
+    }
 }
