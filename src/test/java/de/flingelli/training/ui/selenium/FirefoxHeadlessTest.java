@@ -11,6 +11,7 @@ public class FirefoxHeadlessTest extends CommonBrowserTest {
     public void setup() {
         FirefoxOptions options = new FirefoxOptions();
         options.addArguments("--headless");
+        options.setCapability("webSocketUrl", true);
         setDriver(new FirefoxDriver(options));
     }
 
