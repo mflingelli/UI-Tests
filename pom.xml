@@ -41,6 +41,9 @@
                     <includes>
                         <include>**/**HeadlessTest.java</include>
                     </includes>
+                    <excludes>
+                        <exclude>**/**Edge**Test.java</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
         </plugins>

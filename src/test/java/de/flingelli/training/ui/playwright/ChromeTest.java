@@ -29,7 +29,7 @@ public class ChromeTest extends CommonBrowserTest {
     public void takeScreenshot() {
         Page page = getBrowser().newPage();
         page.navigate("https://playwright.dev/");
-        page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("target/example.png")));
+        page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("target/screenshot-chrome.png")));
     }
 
     @Test
